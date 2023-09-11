@@ -1,5 +1,5 @@
 class Solution:
-    def generateParenthesis(self, n: int, s: str = "(") -> List[str]:
+    def generate_parenthesis(self, n: int, s: str = "(") -> List[str]:
         o = len([el for el in s if el == "("])
         c = len([el for el in s if el == ")"])
         if o == n and c == n:

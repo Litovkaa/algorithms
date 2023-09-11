@@ -17,8 +17,7 @@ def path_finder(surf: str):
     def check_valid(x, y):
         x_val = 0 <= x < rows
         y_val = 0 <= y < cols
-        not_visited = True
-        return x_val and y_val and not_visited
+        return x_val and y_val
 
     while queue:
         x, y = queue.popleft()

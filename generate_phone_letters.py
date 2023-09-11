@@ -1,5 +1,7 @@
-from functools import reduce
 # https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/
+from functools import reduce
+
+
 def letter_combs(digits: str):
     digs_lets = {
         2: ["a", "b", "c"],
@@ -21,6 +23,7 @@ def letter_combs(digits: str):
 
     letter_arrs = [digs_lets[int(k)] for k in digits]
     return reduce(all_pairs, letter_arrs)
+
 
 if __name__ == "__main__":
     print(letter_combs("2345"))
