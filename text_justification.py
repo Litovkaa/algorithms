@@ -29,3 +29,8 @@ class Solution:
 
         rs.append(" ".join(row).ljust(max_width, " "))
         return rs
+
+
+if __name__ == "__main__":
+    s = "a"
+    print(s[1:])
